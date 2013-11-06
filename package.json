@@ -1,0 +1,11 @@
+{
+  "name": "tips-simple",
+  "author": "yongpeng yang",
+  "email": "bugkngihtyyp@gmail.com",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cmd-transport": "~0.2.9",
+    "grunt-contrib-uglify": "~0.2.5"
+  }
+}
