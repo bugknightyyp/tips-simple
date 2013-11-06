@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>自定义提示框</title>
+<link rel="stylesheet" href="../css/tips-simple.css" />
+
+<style>
+ body{ font-size:12px; color:#333333; padding:50px 0 0 300px ;}
+ *{ padding:0; margin:0;}  
+ </style>
+</head>
+
+<body >
+
+
+<input type="text" value="提示会自动消失" id="txt_1"  />
+<input type="text" value="请输入账号" id="txt_2"  style="margin:200px 0 0 500px" /><br />
+<input type="text" value="请输入账号" id="txt_3"  style="margin:200px 0 100px 0" />
+<input type="text" value="请输入账号" id="txt_4"  style="margin:200px 0 0 500px" />
+<div  class="cus_tips_box"  style="display:none;"> <div class="arrow_tips_right" nam="arrow">&nbsp;</div><div class="close_left" name="close">&nbsp;</div><div class="tips_content" name="content">您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！</div></div>
+</body>
+</html>
+
+<script src="http://wres.mangocity.com/js/lib/seajs/2.1.1/sea.js" ></script>
+<script>
+
+seajs.config({
+  
+});
+seajs.use(["../src/tips-simple.js", "jquery/1.10.2/jquery-1.10.2.cmd"],function(tipsSimple, $){
+ var tips = tipsSimple($("#txt_1"), {msg: "您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！", tipsTimeout: 2000});
+ var tips = tipsSimple($("#txt_2"), {msg: "您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！", position: "bottom"});
+ var tips = tipsSimple($("#txt_3"), {msg: "您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！", position: "left"});
+ var tips = tipsSimple($("#txt_4"), {msg: "您输入的邮件格式不对的式不对的重新输入！您输入的邮件格式不对的式不对的重新输入！", position: "top"});
+ 
+
+});
+
+
+
+
+
+</script>
